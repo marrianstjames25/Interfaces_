@@ -67,16 +67,16 @@ namespace Interfaces_
             }
         }
 
-        class Fish : IPrey, IPredator
+        class Fish : IPrey, IPredator //here we can have multiple ineritance since fish can be both prey and predators 
         {
             public void Flee()
             {
-                
+                Console.WriteLine("The rabbit runs away!");
             }
 
             public void Hunt()
             {
-               
+                Console.WriteLine("The hawk is looking for food");
             }
         }
 
